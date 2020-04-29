@@ -1,3 +1,5 @@
+@import "@udacity/veritas-styles/dist/index.scss";
+import { IconNanodegree } from "@udacity/veritas-icons";
 .container{
     display:grid;
     grid-template-columns: 300px 300px 300px;
