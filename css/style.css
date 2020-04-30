@@ -1,4 +1,5 @@
 /* Main style sheet containing the other styp sheets */
 /* Just reference this one in the html */
-@import 'contents.css';
+@import 'containers.css';
 @import 'buttons.css';
+@import 'images.css';
