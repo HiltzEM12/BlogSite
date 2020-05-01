@@ -1,8 +1,3 @@
-/*Simple background for the page*/
-body {
-  background: rgba(175, 218, 255, 0.37);
-}
-
 /*Main contianer for the page*/
 
 /*For small screens*/
@@ -26,75 +21,17 @@ body {
 /*3 rows, nav on left small, small header and footer*/
 @media (min-width:600px) {
   .container{
-    /* display:grid; */
-    /* height:100%; */
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 10px, repeat(10, 1fr);
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd"
     "nav main main main main main main main"
-    "ft ft ft ft ft ft ft ft";
-    /* grid-auto-rows: minmax(1fr,auto); */
-    /* border: 2px solid red; */
-    /* gap: 10px; */
-    /* padding: 10px; */
-    
+    "ft ft ft ft ft ft ft ft";   
   }
-}
-
-
-/*For small screens*/
-/*blog previews are 1 accross*/
-.blogprecontainer{
-  display:grid;
-  border: 2px solid lawngreen;
-  /* grid-auto-rows: minmax(1fr,auto); */
-  grid-area: main;
-  grid-template-columns: 1fr; 
-}
-
-/*For medium screens*/
-/*blog previews are 2 accross*/
-@media (min-width: 600px) and (max-width:900px) {
-  .blogprecontainer{
-    /* display:grid; */
-    /* border: 2px solid lawngreen; */
-    /* grid-auto-rows: minmax(1fr,auto); */
-    /* grid-area: main; */
-    grid-template-columns: 1fr 1fr; 
-  }
-}
-
-/*For big screens*/
-/*blog previews are 3 accross*/
-@media (min-width:901px) {
-  .blogprecontainer{
-    /* display:grid; */
-    /* border: 2px solid lawngreen; */
-    /* grid-auto-rows: minmax(1fr,auto); */
-    /* grid-area: main; */
-    grid-template-columns: 1fr 1fr 1fr; 
-  }
-}
-
-/*Flex container for each blog preview*/
-.blogpreview {
-  display:flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  flex-flow:row wrap;
-  border: 2px solid black;
-}
-
-/*Grid container for the actual blog post*/
-/*No columns unlike the blogprecontainer*/
-.blogcontainer {
-  grid-area: main;
-  border: 2px solid black;
 }
 
 /*For big and medium screens, navigation in multiple rows*/
-.navcontainer{
+.nav-container{
   border: 2px solid rgb(255, 100, 178);
   grid-area: nav;
 }
@@ -102,27 +39,25 @@ body {
 /*Grid container for the navigation options*/
 /*For small screens, just one row with 3 columns*/
 @media (max-width:600px) {
-  .navcontainer{
+  .nav-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* border: 2px solid rgb(255, 100, 178);
-    grid-area: nav; */
   }
 }
 
 /*Flex container for each navigation option*/
-.navcontent{
+.nav-content{
   display:flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: left;
-  /* justify-content: center; */
   border: 2px solid purple;
 } 
 
 /*Simple grid container for the header*/
 .header{
   border: 2px solid rgb(0, 132, 255);
+  text-align: center;
   grid-area:hd;
 }
 
@@ -130,4 +65,12 @@ body {
 .footer{
   border: 2px solid rgb(250, 144, 5);
   grid-area: ft;  
+}
+
+.box {
+  border-radius: 15px;
+  text-align: center;
+  object-position: center;
+  margin: 10px;
+  padding: 10px;
 }

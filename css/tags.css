@@ -1,0 +1,34 @@
+/*Simple background for the page*/
+body {
+  background: rgba(175, 218, 255, 0.37);
+}
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: Serif, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: Comic Sans, Comic Sans MS, cursive;;
+  font-size: x-large;
+}
+
+h3 {
+  font-family: Serif, Helvetica, sans-serif;
+  font-size: small;
+  color: rgba(54, 54, 54, 0.767);
+}
+
+p {
+  font-family: Serif, Helvetica, sans-serif;
+}
+
+img {
+  object-fit: contain;
+}
+
