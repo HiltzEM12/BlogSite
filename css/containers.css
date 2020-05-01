@@ -1,66 +1,69 @@
 /*Main contianer for the page*/
 
 /*For small screens*/
+
 /*1 column with header, nav, main, and footer as rows*/
-.container{
-  display:grid;
-  height:100%;
+
+.container {
+  display: grid;
+  height: 100%;
   grid-template-rows: 10px, 20px, 1fr, 10px;
-  grid-template-areas: 
-  "hd"
-  "nav"
-  "main"
-  "ft";
-  grid-auto-rows: minmax(1fr,auto);
+  grid-template-areas: "hd" "nav" "main" "ft";
+  grid-auto-rows: minmax(1fr, auto);
   gap: 10px;
   padding: 10px;
 }
 
 /*For big and medium screens*/
+
 /*3 rows, nav on left small, small header and footer*/
+
 @media (min-width:600px) {
-  .container{
+  .container {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 10px, repeat(10, 1fr);
-    grid-template-areas: 
-    "hd hd hd hd hd hd hd hd"
-    "nav main main main main main main main"
-    "ft ft ft ft ft ft ft ft";   
+    grid-template-areas: "hd hd hd hd hd hd hd hd" "nav main main main main main main main" "ft ft ft ft ft ft ft ft";
   }
 }
 
 /*For big and medium screens, navigation in multiple rows*/
-.nav-container{
+
+.nav-container {
   grid-area: nav;
 }
 
 /*Grid container for the navigation options*/
+
 /*For small screens, just one row with 3 columns*/
+
 @media (max-width:600px) {
-  .nav-container{
+  .nav-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 /*Flex container for each navigation option*/
-.nav-content{
-  display:flex;
+
+.nav-content {
+  display: flex;
   flex-wrap: wrap;
   padding: 10px;
   flex-direction: column;
   align-items: left;
-} 
+}
 
 /*Simple grid container for the header*/
-.header{
+
+.header {
   text-align: center;
-  grid-area:hd;
+  grid-area: hd;
 }
 
 /*Simple grid container for the footer*/
-.footer{
-  grid-area: ft;  
+
+.footer {
+  grid-area: ft;
 }
 
 .box {
