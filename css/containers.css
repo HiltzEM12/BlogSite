@@ -12,7 +12,6 @@
   "main"
   "ft";
   grid-auto-rows: minmax(1fr,auto);
-  border: 2px solid red;
   gap: 10px;
   padding: 10px;
 }
@@ -32,7 +31,6 @@
 
 /*For big and medium screens, navigation in multiple rows*/
 .nav-container{
-  border: 2px solid rgb(255, 100, 178);
   grid-area: nav;
 }
 
@@ -49,27 +47,24 @@
 .nav-content{
   display:flex;
   flex-wrap: wrap;
+  padding: 10px;
   flex-direction: column;
   align-items: left;
-  border: 2px solid purple;
 } 
 
 /*Simple grid container for the header*/
 .header{
-  border: 2px solid rgb(0, 132, 255);
   text-align: center;
   grid-area:hd;
 }
 
 /*Simple grid container for the footer*/
 .footer{
-  border: 2px solid rgb(250, 144, 5);
   grid-area: ft;  
 }
 
 .box {
   border-radius: 15px;
-  text-align: center;
   object-position: center;
   margin: 10px;
   padding: 10px;

@@ -14,13 +14,18 @@ h1 {
 }
 
 h2 {
-  font-family: Comic Sans, Comic Sans MS, cursive;;
-  font-size: x-large;
+  font-family: Comic Sans, Comic Sans MS, cursive;
+  font-size: medium;
 }
 
+/*Used in the footer*/
+/*Made bold, italic, and underlined to fith the ruberic*/
 h3 {
   font-family: Serif, Helvetica, sans-serif;
   font-size: small;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
   color: rgba(54, 54, 54, 0.767);
 }
 
