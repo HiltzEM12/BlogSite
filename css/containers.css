@@ -7,8 +7,13 @@
 .container {
   display: grid;
   height: 100%;
-  grid-template-rows: 10px, 20px, 1fr, 10px;
-  grid-template-areas: "hd" "nav" "main" "ft";
+  grid-template-rows: 10px, 20px, 1fr, 0.5fr, 10px;
+  grid-template-areas:
+    "hd"
+    "nav"
+    "main"
+    "about"
+    "ft";
   grid-auto-rows: minmax(1fr, auto);
   gap: 10px;
   padding: 10px;
@@ -22,7 +27,10 @@
   .container {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 10px, repeat(10, 1fr);
-    grid-template-areas: "hd hd hd hd hd hd hd hd" "nav main main main main main main main" "ft ft ft ft ft ft ft ft";
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "nav main main main main main main about"
+      "ft ft ft ft ft ft ft ft";
   }
 }
 
@@ -53,16 +61,30 @@
   align-items: left;
 }
 
+
+.about-container {
+  grid-area: about;
+}
+
+.about-pic {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-height: 80px;
+  max-width: 80px
+}
+
 /*Simple grid container for the header*/
 
-.header {
+header {
   text-align: center;
   grid-area: hd;
 }
 
 /*Simple grid container for the footer*/
 
-.footer {
+footer {
   grid-area: ft;
 }
 
@@ -71,4 +93,9 @@
   object-position: center;
   margin: 10px;
   padding: 10px;
+}
+
+.social-logo {
+  width: 30px;
+  height: 30px;
 }

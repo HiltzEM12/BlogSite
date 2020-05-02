@@ -21,7 +21,7 @@ h2 {
 
 /*Used in the footer*/
 
-/*Made bold, italic, and underlined to fith the ruberic*/
+/*Made bold, italic, and underlined to fit the ruberic*/
 
 h3 {
   font-family: Serif, Helvetica, sans-serif;
@@ -32,10 +32,24 @@ h3 {
   color: rgba(54, 54, 54, 0.767);
 }
 
+/*Made bold, italic, and underlined to fit the ruberic*/
+
 p {
   font-family: Serif, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
 }
 
 img {
   object-fit: contain;
+}
+
+figcaption {
+  font-size: small;
+  text-align: center;
+}
+
+figure {
+  max-height: 225px;
 }
